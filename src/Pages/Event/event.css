@@ -1,0 +1,245 @@
+
+  
+  .divEvent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+
+  h3, h4 {
+    margin-bottom: 10px;
+  }
+  
+ .event-details{
+  width: 600px;
+  margin-bottom: 44px;
+  
+ }
+
+.usesDiv{
+align-items: center;
+
+}
+ .event-details, .usesDiv {
+  flex: 1; /* Take up equal width */
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  min-width: 300px; /* Ensure a reasonable minimum width */
+}
+
+
+
+
+/*@media screen and (max-width: 600px) {
+  .divEvent {
+    flex-direction: column;  Stack elements vertically 
+  }
+}*/
+ 
+.event-form {
+ 
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #ebe5e5);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+  .event-form input, .event-form textarea, .event-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Invite Participants */
+  .invite-participants {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  
+  .invite-participants ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .invite-participants li {
+    padding: 8px;
+    background-color: #e7e7e7;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Event Permissions */
+  .event-permissions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Event Preview */
+  .event-preview {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .event-preview img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Rating Form */
+  .rating-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* User Ratings */
+  .user-ratings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Average Rating */
+  .average-rating {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-preview {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .divEvnet {
+      width: 100vh;
+      padding: 10px;
+    }
+  
+    .event-form, .invite-participants, .event-permissions{
+      padding: 15px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    flex: 1;
+    min-width: 70px;
+    margin-right: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #3c0cab;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(42, 137, 171, 0.5);
+    outline: none;
+  }
+  
+  .event-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .event-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .toggle-search-button {
+    background-color: #5a67d8;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+  }
+  
+  .toggle-search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .toggle-search-button:focus {
+    outline: none;
+  }
+
+  

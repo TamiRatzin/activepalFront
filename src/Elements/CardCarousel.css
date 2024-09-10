@@ -1,0 +1,37 @@
+/* CardCarousel.css */
+/* CardCarousel.css */
+.card-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-carousel h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    float: left;
+    width: 100%;
+
+}
+
+.carouselItem{
+    max-width: 230px;
+    min-width: 230px;
+} 

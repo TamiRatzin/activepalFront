@@ -1,0 +1,44 @@
+.home-page {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background: #FFFFFF;
+    padding-bottom: 119px;
+   
+  }
+  
+  .divHome {
+    width: 100%;
+    flex: auto;
+    background: #F2F2F2;
+    border-radius: 16px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .home-page {
+      width: 100%;
+      
+     
+    }
+
+  }
+
+
+  
+
+
+

@@ -1,0 +1,93 @@
+.invite-participants {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.users-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+ 
+}
+
+.user-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1px 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 7px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.invite-button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.invite-button:hover {
+  background-color: #45a049;
+}
+
+.remove-button {
+  padding: 4px 8px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #c62828;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

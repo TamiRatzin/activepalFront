@@ -1,0 +1,383 @@
+.profile-page {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+/* Profile Header Styling */
+.profile-header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* Background Image Styling */
+.background-image {
+  width: 100%;
+  height: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.file-input {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.edit-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-header .edit-button {
+  position: absolute;
+  top: 200px;
+  right: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.edit-button.background-input {
+  position:absolute;
+  width: 40px; 
+  height: 40px;
+  top: 190px;
+  left: 10px;
+  padding: 2px;
+  background-color: #ffffff00;
+  color: rgb(9, 10, 12);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* File Input for Background Image */
+.file-input.background-input {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Profile Picture Container */
+.profile-picture-container {
+  position: absolute;
+  bottom: -75px; /* Position below the header */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.edit-button.profile-input {
+  position: absolute;
+  top:  90px;
+  right: -18px;
+  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* File Input for Profile Image */
+
+.file-input.profile-input {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0; /* Make the input invisible but clickable */
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+  /* Ensure the input is above other elements */
+}
+
+
+
+/* Profile Header Title */
+h1 {
+  margin-top: 80px; /* Adjust margin to avoid overlap with profile picture */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+.profile-stats {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  padding: 0px 0;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Gradient background */
+  margin: 40px 20px 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile-stats div {
+  flex: 1; /* Ensure each stat item takes up equal space */
+  text-align: center;
+  padding: 10px 0;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  border-left: 1px solid #ddd; /* Add separator lines between items */
+}
+
+.profile-stats div:first-child {
+  border-left: none; /* Remove border from the first item */
+}
+
+.profile-stats div:hover {
+  transform: translateY(-5px); /* Lift the item on hover */
+  background-color: #fafafa; /* Light background on hover */
+}
+
+.profile-stats span {
+  display: block;
+  font-size: 16px; /* Base font size */
+  color: #333;
+}
+
+.profile-stats span:first-child {
+  font-weight: bold; /* Emphasize the label (e.g., Events, Friends) */
+  font-size: 18px;
+  color: #007bff; /* Accent color for label */
+}
+
+.profile-stats span:last-child {
+  font-size: 24px; /* Larger font for numbers */
+  color: #333; /* Consistent text color */
+}
+
+.about-section,
+.preferences-section,
+.sports-section,
+.last-feed-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 20px 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative; /* Position relative to allow button positioning */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Section Header Styling */
+.about-section h2,
+.preferences-section h2,
+.sports-section h2,
+.last-feed-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Hover Effect on Sections */
+.about-section:hover,
+.preferences-section:hover,
+.sports-section:hover,
+.last-feed-section:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+
+textarea {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.about-textarea {
+  width: 100%;
+  min-height: 150px; /* Increased minimum height to prevent shrinking */
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.preferences-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.preferences-section input {
+  width: calc(100% - 42px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sport-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  
+  .profile-page {
+    
+    padding: 0px;
+    
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+
+  textarea {
+    font-size: 12px;
+  }
+
+}
+
+
+/*
+.preferences-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-group button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sports-list, .preferences-list {
+  margin-top: 10px;
+}
+
+.sport-item, .preference-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.remove-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+*/
+
+
+
+
+.about-section {
+  margin-bottom: 20px; /* Add some margin to prevent crowding */
+}
+

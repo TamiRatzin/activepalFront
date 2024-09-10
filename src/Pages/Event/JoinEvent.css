@@ -1,0 +1,73 @@
+.joined-participants {
+    
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .participants-list {
+    list-style-type: none;
+    
+    padding: 0;
+    margin: 0;
+  }
+  
+  .participant-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .participant-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .participant-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .participant-details {
+    flex: 1;
+  }
+  
+  .participant-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .participant-info, 
+  .participant-role {
+    display: flex;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  @media (max-width: 480px) {
+    .participant-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .participant-image {
+      margin-bottom: 8px;
+    }
+  }
+  

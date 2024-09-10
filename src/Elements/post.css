@@ -1,0 +1,157 @@
+/* Base Styling */
+.post {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #fff;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.post-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.post-info p {
+  margin: 4px 0 0;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.post-content p {
+  margin: 0 0 16px;
+  font-size: 1em;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Reactions and Actions Styling */
+.post-reactions,
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  border-top: 1px solid #e0e0e0;
+  padding-top: 8px;
+}
+
+.reaction-icons {
+  display: flex;
+  align-items: center;
+}
+
+.reaction {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.reaction.like {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/LinkedIn_like_icon.svg/120px-LinkedIn_like_icon.svg.png');
+}
+
+.reaction.love {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/LinkedIn_love_icon.svg/120px-LinkedIn_love_icon.svg.png');
+}
+
+.reaction.celebrate {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/LinkedIn_celebrate_icon.svg/120px-LinkedIn_celebrate_icon.svg.png');
+}
+
+.reaction-count {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.comment-repost {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  padding: 8px 12px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post-actions button i {
+  margin-right: 8px;
+}
+
+.like-icon::before {
+  content: '👍';
+}
+
+.comment-icon::before {
+  content: '💬';
+}
+
+.share-icon::before {
+  content: '➡️';
+}
+
+.post-actions button:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+
+@media (max-width: 480px) {
+
+
+  .post-info h3 {
+    font-size: 1em;
+  }
+
+  .post-info p {
+    font-size: 0.7em;
+  }
+
+  .post-content p {
+    font-size: 0.8em;
+  }
+
+  .post-reactions,
+  .post-actions {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 16px;
+  }
+
+  .reaction-icons {
+    margin-bottom: 8px;
+  }
+
+  .post-actions button {
+    font-size: 0.8rem;
+    padding: 4px 0px;
+  }
+}

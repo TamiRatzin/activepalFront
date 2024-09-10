@@ -1,0 +1,255 @@
+/* General Event Styling */
+
+.divEventview {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.event-container {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0px; /* Added padding for content spacing */
+  margin-bottom: 40px;
+}
+
+/* User List Styling */
+
+.table-container {
+  max-width: 100%;
+  padding: 20px;
+  overflow-x: auto; /* Ensures horizontal scrolling on small screens */
+}
+
+/* User Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.user-table thead {
+  background-color: #f4f4f4;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  font-weight: bold;
+}
+
+/* User Card */
+.user-row {
+  transition: background-color 0.3s ease;
+}
+
+.user-row:hover {
+  background-color: #f9f9f9;
+}
+
+.user-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px;
+}
+
+/* Star Rating */
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filled-star,
+.half-star,
+.empty-star {
+  margin: 0 2px;
+}
+
+.filled-star {
+  color: #FFD700;
+}
+
+.half-star {
+  color: #FFD700;
+  opacity: 0.5;
+}
+
+.empty-star {
+  color: #d3cfcf;
+}
+
+/* Rank Button */
+.rank-button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rank-button:hover {
+  background-color: #145dbf;
+  transform: scale(1.05);
+}
+
+/* Header */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Event Details */
+.event-details-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.event-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.event-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-meta p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.event-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.event-participants {
+  font-size: 16px;
+  color: #555;
+}
+
+.event-join-button {
+  background-color: #ff6f00; /* Vibrant sports-related color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-join-button:hover {
+  background-color: #e65c00;
+}
+
+.joined {
+  background-color: #28a745; /* Green for confirmation */
+  cursor: default;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 14px;
+  }
+
+
+
+  .event-details {
+    padding: 15px;
+  }
+
+  .event-title {
+    font-size: 22px;
+  }
+
+  .event-meta p,
+  .event-description,
+  .event-participants {
+    font-size: 14px;
+  }
+
+  .event-join-button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-table {
+    font-size: 12px;
+  }
+
+  
+  .event-details {
+    padding: 10px;
+  }
+
+  .event-title {
+    font-size: 20px;
+  }
+
+  .event-meta p,
+  .event-description,
+  .event-participants {
+    font-size: 12px;
+  }
+
+  .event-join-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

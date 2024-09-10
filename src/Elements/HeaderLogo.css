@@ -1,0 +1,55 @@
+/* General styling for the header */
+.header {
+    background: linear-gradient(
+        58deg, rgb(13, 101, 234) 20%, rgb(55, 243, 209) 100%
+      );
+      position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 50%;
+    padding-bottom: 40px;
+  }
+  
+  /* Header content */
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Highlight part of the title */
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px;
+    }
+  
+    .logo {
+      font-size: 3.0rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 2.7rem;
+    }
+  }
+  

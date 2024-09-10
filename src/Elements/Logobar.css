@@ -1,0 +1,33 @@
+/* General styling for the header */
+
+  
+  /* Logo styling */
+
+
+  .logobar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* Adjust size for a smaller navbar */
+    font-weight: bold;
+    color: rgba(14, 97, 222, 0.77);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none; /* Remove underline from link */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect for the logo */
+
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    
+  
+    .logobar {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logobar {
+      font-size: 1.3rem;
+    }
+  }
